@@ -150,7 +150,7 @@ exports.init = function (grunt) {
     }
 
     child = exec(args.join(' '), {
-      maxBuffer: 300 * 1024,
+      maxBuffer: 30 * 1024 * 1024,
       cwd: process.cwd(),
       env: env
     }, function (err, results, code) {
